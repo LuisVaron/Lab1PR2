@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8' name='viewport' content='width=device-width'>
+    <title>Laboratorio 1</title>
+    <link rel='stylesheet' href='css/main.css'>
+    <script src='js/main.js'></script>
+</head>
+<body>
+    <div class = content>
+        <img src="imgs/logo.png" alt="unBosque">
+        <table>
+            <tr>
+                <td>Numero a evaluar: </td>
+                <td><input required ="" type ="number" id="numero" onchange="validarSigno()"></td>
+            </tr>
+            <tr>
+                <td>Calculo: </td>
+                <td>
+                    <select id="calculo">
+                        <option value = 1>Factorial</option>
+                        <option value = 2>Serie de potencias</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><center><input type="submit" value="Calcular" class="boton" onclick="calcular()"></center></td>
+                <td><center><input type="submit" value="Limpiar" class="boton" onclick="limpiar()"></center></td>
+            </tr>
+        </table>
+    </div>
+    <div class = 'solution'>
+        <table>
+            <tr>
+                <td>Resultado:</td>
+                <td><textarea disabled="true" id="respuesta"></textarea></td>
+            </tr>
+            <p id="develope">Presentado por: Luis Varon y Miguel Ruiz</p>
+        </table>
+    </div>
+</body>
+</html>
+
+
