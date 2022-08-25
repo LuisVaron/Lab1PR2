@@ -1,0 +1,89 @@
+html,
+body
+{
+    font-family: Arial;
+    font-size: large;
+    height: 99%;
+}
+
+img
+{
+    position: absolute;
+    width: 8%;
+    margin-left: 2%;
+    margin-top: 1%;
+    height: auto;
+}
+
+table
+{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#respuesta
+{
+    background: transparent;
+    font-family: Arial;
+    font-weight: bold;
+    font-size: large;
+    resize: none;
+    overflow:auto;
+    border: none;
+    width: 400px;
+    height: 210px;
+}
+
+
+@media (min-width: 961px){
+    .content
+    {
+        width: 50%;
+        height: 100%;
+        background-color: #7BC142;
+        float: left;
+    }
+
+    .solution
+    {
+        width: 50%;
+        height: 100%;
+        float: right;
+    }
+
+    table
+    {
+        margin-top: 40%;
+    }
+    
+}
+
+@media (max-width: 960px){
+    .content
+    {
+        height: 30%;
+        background-color: #7BC142;
+    }
+
+    .solution
+    {
+
+        height: 50%;
+    }
+
+    table
+    {
+        margin-top: 0;
+        vertical-align: bottom;
+        padding-bottom: 25%;
+        padding-top: 10%;
+    }
+}
+
+#develope {
+    position: absolute;
+    bottom: 0;
+    right: 1%;
+  }
+
+
