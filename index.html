@@ -1,21 +1,32 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <!--Se indican los etiquetas:
+        charset: Para permitir caracteres del alfabeto español
+        name: Para ajustar la resolucion de acuerdo al dispositivo
+        content: Para tomar el grosor del dispositivo en donde nos encontremos
+    -->
     <meta charset='utf-8' name='viewport' content='width=device-width, initial-scale=1'>
     <title>Laboratorio 1</title>
+    <!--Referencia para archivo css-->
     <link rel='stylesheet' href='css/main.css'>
+    <!--Referencia para archivo js-->
     <script src='js/main.js'></script>
 </head>
 <body>
+    <!--Contenedor donde se encuentran los input de la pagina-->
     <div class = content>
+        <!--Imagen de logo de la universidad-->
         <img src="imgs/logo.png" alt="unBosque">
         <table>
             <tr>
                 <td>Numero a evaluar: </td>
+                <!--Campo para ingresar numero a evaluar, se le asigna etiqueta onchange para evaluar su contenido cada que se modifica-->
                 <td><input required ="" type ="number" id="numero" onchange="validarSigno()"></td>
             </tr>
             <tr>
                 <td>Calculo: </td>
+                <!--Campo para seleccionar el calculo a realizar-->
                 <td>
                     <select id="calculo">
                         <option value = 1>Factorial</option>
@@ -24,11 +35,14 @@
                 </td>
             </tr>
             <tr>
+                <!--Boton para ejecutar el calculo dependiendo de la opcion seleccionada-->
                 <td><center><input type="submit" value="Calcular" class="boton" onclick="calcular()"></center></td>
+                <!--Boton para limpiar el resultado y la entrada numerica-->
                 <td><center><input type="submit" value="Limpiar" class="boton" onclick="limpiar()"></center></td>
             </tr>
         </table>
     </div>
+    <!--Contenedor donde se encuentra la caja de texto que muestra los resultados-->
     <div class = 'solution'>
         <table>
             <tr>

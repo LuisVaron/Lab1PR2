@@ -1,3 +1,6 @@
+/**
+ * Funcion para validar si el dato a evaluar es mayor a 0 y si este es un valor valido.
+ */
 function validarSigno(){
     if(numero.value <= 0 || numero.value == ''){
         alert('El numero diligenciado debe ser superior a 0.');
@@ -5,11 +8,18 @@ function validarSigno(){
     }
 }
 
+/**
+ * Funcion para limpiar los campos de ingresar datos y mostrar respuesta
+ */
 function limpiar(){
     numero.value = '';
     respuesta.value = '';   
 }
 
+/**
+ * Funcion para calcular el resultado del valor ingresado, en caso de ser 1 se evalua el factorial y se muestra, 
+ * en caso de ser 2 se evaluan las potencias del numero de 1 a 10 y se muestra
+ */
 function calcular(){
     var desition = calculo.value;
     var numb = numero.value;
